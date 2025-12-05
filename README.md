@@ -4,10 +4,7 @@
 
 ## 🚀 Features
 
-- ✅ Ingest live ticks from Kafka  
-- ✅ Convert ticks into 1-minute OHLCV candles  
-- ✅ Store historical candles in PostgreSQL  
-- ✅ Perform UPSERT logic (update existing candle for the same minute)
+- ✅ Ingest live ticks from Kafka into redis
 
 ---
 
