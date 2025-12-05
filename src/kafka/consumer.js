@@ -1,12 +1,12 @@
 require("dotenv").config();
 const { Kafka } = require("kafkajs");
-const { handleError } = require("../helpers/errorHandler");
+const handleError = require("../helpers/errorHandler");
 const { connectRedis, saveLiveTick } = require("../services/redisService");
 
 async function runConsumer() {
   const kafka = new Kafka({
     clientId: "stockpulse-io-consumer-for-redis",
-    brokers: [process.env.BROKER_NAME],
+    brokers: [process.env.KAFKA_BROKER_NAME],
   });
 
   const consumer = kafka.consumer({ groupId: "stockpulse-stream-redis-group" });
