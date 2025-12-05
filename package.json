@@ -1,0 +1,26 @@
+{
+  "name": "stockpulse-data-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stockpulse-io/stockpulse-data-cache.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stockpulse-io/stockpulse-data-cache/issues"
+  },
+  "homepage": "https://github.com/stockpulse-io/stockpulse-data-cache#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "kafkajs": "^2.2.4",
+    "pg": "^8.16.3",
+    "redis": "^5.10.0"
+  }
+}
